@@ -1,0 +1,46 @@
+// JCL_DEBUG_EXPERT_GENERATEJDBG OFF
+// JCL_DEBUG_EXPERT_INSERTJDBG OFF
+package dxIDEPackage.JSONStringVisualizer.D10Seattle;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide;
+
+contains
+  dxIDEPackage.JSONStringVisualizer.DisplayFrame in '..\..\Source\dxIDEPackage.JSONStringVisualizer.DisplayFrame.pas' {JSONStringDebugViewerFrame: TFrame},
+  dxLib_JSONFormatter in '..\..\Dependencies\dxLib\Source\dxLib_JSONFormatter.pas',
+  dxLib_JSONUtils in '..\..\Dependencies\dxLib\Source\dxLib_JSONUtils.pas',
+  dxLib_Streams in '..\..\Dependencies\dxLib\Source\dxLib_Streams.pas',
+  dxLib_Strings in '..\..\Dependencies\dxLib\Source\dxLib_Strings.pas',
+  dxIDEPackage.JSONStringVisualizer.Register in '..\..\Source\dxIDEPackage.JSONStringVisualizer.Register.pas',
+  dxIDEPackage.JSONStringVisualizer.DockableForm in '..\..\Source\dxIDEPackage.JSONStringVisualizer.DockableForm.pas',
+  dxIDEPackage.JSONStringVisualizer.ExternalViewer in '..\..\Source\dxIDEPackage.JSONStringVisualizer.ExternalViewer.pas';
+
+end.
