@@ -54,8 +54,8 @@ uses
 
 
 resourcestring
-  JSONString_VisualizerName = 'dxIDEPackage JSON String Visualizer for Delphi';
-  JSONString_VisualizerDescription = 'Used on strings in JSON format - reformats the JSON into a more easily readable form (JSON pretty printer)';
+  JSONString_VisualizerName = 'dxIDEPackage: JSON String Visualizer for Delphi';
+  JSONString_VisualizerDescription = 'Use on strings in JSON format - reformats the JSON into a more easily readable form (JSON pretty printer)';
   JSONString_VisualizerMenuText = 'View string as formatted JSON';
 
 

@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{24956576-1EA6-4A82-AE4D-7939A5F9241C}</ProjectGuid>
-        <MainSource>dxIDEPackage.JSONStringVisualizer.D10Seattle.dpk</MainSource>
+        <MainSource>dxIDEPackage.JSONStringVisualizer.D230.dpk</MainSource>
         <ProjectVersion>18.1</ProjectVersion>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
@@ -82,7 +82,7 @@
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;Vcl;$(DCC_Namespace)</DCC_Namespace>
-        <SanitizedProjectName>dxIDEPackage_JSONStringVisualizer_D10Seattle</SanitizedProjectName>
+        <SanitizedProjectName>dxIDEPackage_JSONStringVisualizer_D230</SanitizedProjectName>
         <DCC_DependencyCheckOutputName>C:\Users\Public\Documents\RAD Studio\7.0\Bpl\pckColorVisualizer.bpl</DCC_DependencyCheckOutputName>
         <GenDll>true</GenDll>
         <GenPackage>true</GenPackage>
@@ -113,7 +113,7 @@
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
-        <DCC_UsePackage>rtl;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_UsePackage>rtl;dxLibD230;$(DCC_UsePackage)</DCC_UsePackage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <DCC_UsePackage>rtl;$(DCC_UsePackage)</DCC_UsePackage>
@@ -135,6 +135,7 @@
         <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_Keys>CompanyName=;FileDescription=https://github.com/darianmiller/dxIDEPackage_JSONStringVisualizer/;FileVersion=1.0.0.0;InternalName=dxIDEPackage.JSONStringVisualizer;LegalCopyright=Copyright (c) 2016 Darian Miller  All Rights Reserved;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=Created 2016-01-03</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <ItemGroup>
@@ -143,14 +144,11 @@
         </DelphiCompile>
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="designide.dcp"/>
+        <DCCReference Include="dxLibD230.dcp"/>
         <DCCReference Include="..\..\Source\dxIDEPackage.JSONStringVisualizer.DisplayFrame.pas">
             <Form>JSONStringDebugViewerFrame</Form>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="..\..\Dependencies\dxLib\Source\dxLib_JSONFormatter.pas"/>
-        <DCCReference Include="..\..\Dependencies\dxLib\Source\dxLib_JSONUtils.pas"/>
-        <DCCReference Include="..\..\Dependencies\dxLib\Source\dxLib_Streams.pas"/>
-        <DCCReference Include="..\..\Dependencies\dxLib\Source\dxLib_Strings.pas"/>
         <DCCReference Include="..\..\Source\dxIDEPackage.JSONStringVisualizer.Register.pas"/>
         <DCCReference Include="..\..\Source\dxIDEPackage.JSONStringVisualizer.DockableForm.pas"/>
         <DCCReference Include="..\..\Source\dxIDEPackage.JSONStringVisualizer.ExternalViewer.pas"/>
@@ -173,7 +171,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">dxIDEPackage.JSONStringVisualizer.D10Seattle.dpk</Source>
+                    <Source Name="MainSource">dxIDEPackage.JSONStringVisualizer.D230.dpk</Source>
                 </Source>
                 <Parameters>
                     <Parameters Name="UseLauncher">False</Parameters>
@@ -222,9 +220,9 @@
                 <Platform value="Win64">False</Platform>
             </Platforms>
             <Deployment Version="2">
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxIDEPackage.JSONStringVisualizer.D10Seattle.bpl" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxIDEPackage.JSONStringVisualizer.D230.bpl" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>dxIDEPackage_JSONStringVisualizer_D10Seattle.bpl</RemoteName>
+                        <RemoteName>dxIDEPackage_JSONStringVisualizer_D230.bpl</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

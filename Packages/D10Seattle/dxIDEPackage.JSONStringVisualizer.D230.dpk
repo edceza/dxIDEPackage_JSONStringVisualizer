@@ -1,6 +1,6 @@
 // JCL_DEBUG_EXPERT_GENERATEJDBG OFF
 // JCL_DEBUG_EXPERT_INSERTJDBG OFF
-package dxIDEPackage.JSONStringVisualizer.D10Seattle;
+package dxIDEPackage.JSONStringVisualizer.D230;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -31,14 +31,11 @@ package dxIDEPackage.JSONStringVisualizer.D10Seattle;
 
 requires
   rtl,
-  designide;
+  designide,
+  dxLibD230;
 
 contains
   dxIDEPackage.JSONStringVisualizer.DisplayFrame in '..\..\Source\dxIDEPackage.JSONStringVisualizer.DisplayFrame.pas' {JSONStringDebugViewerFrame: TFrame},
-  dxLib_JSONFormatter in '..\..\Dependencies\dxLib\Source\dxLib_JSONFormatter.pas',
-  dxLib_JSONUtils in '..\..\Dependencies\dxLib\Source\dxLib_JSONUtils.pas',
-  dxLib_Streams in '..\..\Dependencies\dxLib\Source\dxLib_Streams.pas',
-  dxLib_Strings in '..\..\Dependencies\dxLib\Source\dxLib_Strings.pas',
   dxIDEPackage.JSONStringVisualizer.Register in '..\..\Source\dxIDEPackage.JSONStringVisualizer.Register.pas',
   dxIDEPackage.JSONStringVisualizer.DockableForm in '..\..\Source\dxIDEPackage.JSONStringVisualizer.DockableForm.pas',
   dxIDEPackage.JSONStringVisualizer.ExternalViewer in '..\..\Source\dxIDEPackage.JSONStringVisualizer.ExternalViewer.pas';

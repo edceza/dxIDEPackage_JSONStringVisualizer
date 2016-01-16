@@ -1,0 +1,3 @@
+https://github.com/darianmiller/dxLib/
+
+If not using source in multiple packages, just include dxLib_JSONFormatter.pas and support units in this project.  Otherwise build the dxLib runtime package for use with this project.
